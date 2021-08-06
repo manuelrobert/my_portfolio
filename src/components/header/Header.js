@@ -6,7 +6,7 @@ function Header() {
         <header>
             <ul>
                 <li>
-                    <NavLink>Manuel Robert</NavLink>
+                    <NavLink to='/'>Manuel Robert</NavLink>
                 </li>
             </ul>
         </header>
