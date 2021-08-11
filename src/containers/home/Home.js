@@ -1,9 +1,13 @@
+import React from 'react'
+
 import Layout from '../../components/layout/Layout';
+import Greetings from '../../components/greetings/Greetings';
+// import ParticlesBg from '../../components/particlesBg/ParticlesBg';
 
 function Home(props) {
     return (
         <Layout>
-            <h1>Home</h1>
+            <Greetings />
         </Layout>
     );
 }
