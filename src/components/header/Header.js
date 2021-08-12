@@ -18,8 +18,8 @@ function Header(props) {
     return (
         <header className='header'>
             <span className='title'>Manuel Robert</span>
-            <input className="menu-btn" type="checkbox" />
-            <label className="menu-icon" htmlFor="menu-btn">
+            <input type='checkbox' className='menu-btn' id='menu-btn'/>
+            <label htmlFor='menu-btn' className='menu-icon'>
                 <span className="navicon"></span>
             </label>
             <ul className='menu'>

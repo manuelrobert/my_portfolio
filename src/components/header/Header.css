@@ -38,9 +38,10 @@
 
 /* menu icon */
 
-.header .menu-icon{
+.header .menu-icon {
     cursor: pointer;
     float: right;
+    margin: 0;
     padding: 28px 20px;
     position: relative;
     user-select: none;
@@ -51,11 +52,12 @@
     display: block;
     height: 2px;
     position: relative;
-    transition: background 0.2s ease-out;
+    transition: 0.2s ease-out;
+    /* transition: width 2s; */
     width: 18px;
 }
 
-.header .menu-icon .navicon:before,
+/* .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
     background: #333;
     content: "";
@@ -64,61 +66,62 @@
     transition: all 0.2s ease-out;
     display: block; 
     position: absolute;
-}
+} */
 
-.header .menu-icon .navicon:before {
+/* .header .menu-icon .navicon:before {
     top: 5px;
-}
+} */
   
-.header .menu-icon .navicon:after {
+/* .header .menu-icon .navicon:after {
     top: -5px;
-}
+} */
   
-  /* menu btn */
+/* menu btn */
+
 .header .menu-btn {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+/* .header .menu-btn:checked ~ .menu {
     max-height: 370px;
-}
+} */
   
-.header .menu-btn:checked ~ .menu-icon .navicon {
+/* .header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
-}
+} */
   
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+/* .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
-}
+} */
   
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+/* .header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
-}
+} */
   
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+/* .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-}
+} */
 
 /* Media Query */
 @media (min-width: 48em) {
-.header li {
-    float: left;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header .menu {
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+    .header li {
+        float: left;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .menu {
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
 }
 @media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
+    .header {
+        font-size: 12px;
     }
 }

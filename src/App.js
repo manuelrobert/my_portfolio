@@ -4,7 +4,7 @@ import Home from './containers/home/Home';
 
 function App() {
   return (
-    <Home />
+    <Home/>
     // <Switch>
     //   <Route path='/' component={Home} exact></Route>
     // </Switch>
